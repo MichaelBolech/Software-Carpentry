@@ -1,0 +1,34 @@
+grey: command mode
+green: edit mode (click cell)
+b: add another cell
+dd: delete cell
+h: list all keyboard shortcuts
+Shift_Enter: Execute code in cell
+
+,: parameter separator
+import numpy: import Numpy library
+numpy.loadtxt(): specific function of Numpy is being used. Creates matrix and calulcates its attributes
+
+[variable] = [value]: sets [variable] to [value]
+print [variable]: print out value of [name]
+print type([variable]): Shows data type, e.g. "ndarray"
+print [variable].shape: Shows how many (Rows) and (Column) [name] has.
+help (data): get help on attributes for data
+dir(data): similar to help but only lists options
+
+"print 'first value in data:', data[0,0]": Shows first value in set called data.
+print data[0:4,0:10]: First 4 rows and first 10 columns in set called data. 0:4: Start at first value and give everything except the 4th row. Example: 5:10: Start at patient 6 and give 5 rows excluding row 10 = 5 rows in total.
+print data[0,:]: first row and all columns
+print data[:3,36:]: first 3 rows and columns from 37 until end.
+print data.mean(): function, gives mean of data
+print data[0,:].mean(): mean of first row
+print data.mean(axis=0): Takes each column, calculates mean and result is row
+print data.mean(axis=1): Takes each row, calculates mean and result is column
+
+%matplotlib inline: Keeps plots in the notebook and not extra window
+
+legend((line1),('Average'),1)
+~matplotlib.patches.Patch
+
+range([number]: Gives numbers, starting at 0
+range(1,5): Numbers from 1 to 4.
